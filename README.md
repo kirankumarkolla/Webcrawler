@@ -1,9 +1,9 @@
 # Webcrawler
-1  sudo yum update -y
-    2  sudo amazon-linux-extras install docker
-    3  sudo amazon-linux-2023 install docker
+### sudo yum update -y
+### sudo amazon-linux-extras install docker
+### sudo amazon-linux-2023 install docker
     4      sudo dnf update -y
-    5      sudo dnf install -y docker
+### sudo dnf install -y docker
     6  sudo service docker start
     7      sudo usermod -aG docker ec2-user
 
