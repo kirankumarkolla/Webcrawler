@@ -1,0 +1,7 @@
+openai
+langchain
+chromadb
+beautifulsoup4
+tiktoken
+playwright
+requests
