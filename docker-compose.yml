@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  crawler:
+    build: .
+    environment:
+      OPENAI_API_KEY: "your-openai-key-here"
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    tty: true
