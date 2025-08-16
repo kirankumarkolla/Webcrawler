@@ -14,3 +14,16 @@
         sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
         sudo chmod +x /usr/local/bin/docker-compose
         docker-compose --version
+
+### Cleanup space from docker images
+        # Remove stopped containers
+    docker container prune -f
+
+# Remove unused images
+    docker image prune -a -f
+
+# Remove unused volumes
+    docker volume prune -f
+
+# Remove unused build cache
+    docker builder prune -a -f
