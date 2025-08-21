@@ -27,3 +27,19 @@
 
 # Remove unused build cache
     docker builder prune -a -f
+
+
+# Run postgres docker locally
+    docker pull postgres
+    docker run --name my_postgres -d -e POSTGRES_PASSWORD=kiran1234 -v my_pgdata:/var/lib/postgresql/data -p 5432:5432 postgres
+
+## Connecting other apps
+## You can also connect other applications to the PostgreSQL database running in the Docker container. You need to provide the following connection details:
+
+    Host: localhost
+    Port: 5432
+    Username: postgres
+    Password: (whatever you set it to)
+    Database: postgres
+or Connection String
+        postgresql://postgres:mysecretpassword@localhost:5432/postgres
