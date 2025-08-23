@@ -41,5 +41,7 @@
     Username: postgres
     Password: (whatever you set it to)
     Database: postgres
+
 or Connection String
-        postgresql://postgres:mysecretpassword@localhost:5432/postgres
+                
+    postgresql://postgres:mysecretpassword@localhost:5432/postgres
